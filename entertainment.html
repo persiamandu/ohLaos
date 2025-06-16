@@ -1,80 +1,110 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>비엔티엔 유흥 정보</title>
-  <link rel="stylesheet" href="/ohLaos/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서브페이지 2 - 비엔티엔 유흥 정보</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #f8f9fa;
       margin: 0;
-      padding: 2rem 1rem;
+      background-color: #f5f5f5;
     }
-    .menu-grid {
-      display: flex;
-      flex-direction: column;
+    header, footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #ffffff;
+    }
+    h1 { margin: 0; font-size: 1.8rem; }
+    p { margin: 0.2rem 0 1rem; color: #666; }
+    main { padding: 1rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
-      padding: 0 1rem;
     }
-    .menu-card {
+    .card {
       background-color: white;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      padding: 1rem;
       display: flex;
       flex-direction: column;
       gap: 0.75rem;
     }
-    .menu-card .icon {
-      font-size: 2rem;
-    }
-    .menu-card .label {
-      font-size: 1.3rem;
+    .label {
+      font-size: 1.2rem;
       font-weight: bold;
+      color: #222;
     }
-    .menu-card p {
-      font-size: 1rem;
-      line-height: 1.5;
+    .info {
+      font-size: 0.95rem;
+      color: #444;
     }
     .reserve-button {
       align-self: flex-start;
       padding: 0.5rem 1rem;
-      background-color: #e83e8c;
+      background-color: #007bff;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
-      font-size: 0.95rem;
-    }
-    .reserve-button:hover {
-      background-color: #c82368;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <h1>비엔티엔 유흥 정보</h1>
-  <div class="menu-grid">
-    <div class="menu-card">
-      <div class="icon">🎤</div>
-      <div class="label">KTV 라오팝</div>
-      <p>한국인 전용 KTV, 비엔티엔 중심가 위치, 20대 직원 위주</p>
-      <a class="reserve-button" href="#">자세히 보기</a>
-    </div>
+  <header>
+    <h1>비엔티엔 유흥 정보</h1>
+    <p>비엔티엔 중심 기준 10km 이내 가라오케 · 클럽 · KTV 추천</p>
+  </header>
 
-    <div class="menu-card">
-      <div class="icon">🍸</div>
-      <div class="label">클럽 인디고</div>
-      <p>라오스 젊은층이 많이 찾는 EDM 클럽, 밤 10시 오픈</p>
-      <a class="reserve-button" href="#">자세히 보기</a>
-    </div>
+  <main>
+    <section class="entertainment">
+      <div class="grid">
 
-    <div class="menu-card">
-      <div class="icon">🍻</div>
-      <div class="label">한인 바 이밤</div>
-      <p>한국식 안주와 소주 제공, 한글 메뉴판, 주말엔 예약 필수</p>
-      <a class="reserve-button" href="#">자세히 보기</a>
-    </div>
-  </div>
+        <div class="card">
+          <div class="label">Zijingcheng KTV</div>
+          <div class="info">가라오케 · 프라이빗 룸 · 새벽 2시까지</div>
+          <a class="reserve-button" href="https://www.google.com/maps/place/Zijingcheng+KTV" target="_blank">지도보기</a>
+        </div>
+
+        <div class="card">
+          <div class="label">A‑51 Vientiane Karaoke & Night Club</div>
+          <div class="info">가라오케+클럽 · 24시간 운영</div>
+          <a class="reserve-button" href="https://www.google.com/maps/place/A-51+Karaoke" target="_blank">지도보기</a>
+        </div>
+
+        <div class="card">
+          <div class="label">Club DPlus</div>
+          <div class="info">클럽+KTV · 중심부 470m</div>
+          <a class="reserve-button" href="https://www.google.com/maps/place/Club+DPlus" target="_blank">지도보기</a>
+        </div>
+
+        <div class="card">
+          <div class="label">CCC Bar & Club Vientiane</div>
+          <div class="info">바 · 라이브 · 클럽 · 합리적 가격</div>
+          <a class="reserve-button" href="https://www.google.com/maps/place/CCC+Bar+Vientiane" target="_blank">지도보기</a>
+        </div>
+
+        <div class="card">
+          <div class="label">Marina Night Club</div>
+          <div class="info">클럽+가라오케 · 3.6km 거리</div>
+          <a class="reserve-button" href="https://www.google.com/maps/place/Marina+Night+Club" target="_blank">지도보기</a>
+        </div>
+
+        <div class="card">
+          <div class="label">Wind West</div>
+          <div class="info">음악 중심 바 & 클럽 · 1.7km 거리</div>
+          <a class="reserve-button" href="https://www.google.com/maps/place/Wind+West+Bar" target="_blank">지도보기</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Oh LAOS. 모든 권리 보유.</p>
+  </footer>
 </body>
 </html>
