@@ -1,14 +1,126 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oh LAOS 메인페이지</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oh LAOS - 라오르 여행</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      background-color: #f0f4f9;
+      color: #333;
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1552034403-6a6aaf311fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      color: white;
+      padding: 4rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    }
+
+    .menu {
+      padding: 2rem 1rem;
+      background-color: #e8f0fb;
+      text-align: center;
+    }
+
+    .menu h2 {
+      font-size: 1.6rem;
+      color: #004080;
+      margin-bottom: 2rem;
+    }
+
+    .menu-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .menu-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 160px;
+      height: 120px;
+      background-color: #004c99;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .menu-card:hover {
+      background-color: #0066cc;
+      transform: translateY(-3px);
+    }
+
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .label {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Oh LAOS 메인페이지입니다!</h1>
-  <p><a href="golf.html">🏌️ 골프장 정보</a></p>
-  <p><a href="entertainment.html">🍸 유흥 정보</a></p>
-  <p><a href="hotel.html">🏨 호텔 정보</a></p>
+
+  <header>
+    <h1>Oh LAOS!</h1>
+    <p>여행을 더 가볍게, 더 깊게.</p>
+  </header>
+
+  <main>
+    <section class="menu">
+      <h2>라오르 oh LAOS</h2>
+      <div class="menu-grid">
+        <a href="https://codepen.io/lkcjjgvq-the-typescripter/full/MYwBWBX" class="menu-card">
+          <div class="icon">🏌️‍♂️</div>
+          <div class="label">골프</div>
+        </a>
+        <a href="https://codepen.io/lkcjjgvq-the-typescripter/full/KwpBpeM" class="menu-card">
+          <div class="icon">🍸</div>
+          <div class="label">유흥</div>
+        </a>
+        <a href="https://codepen.io/lkcjjgvq-the-typescripter/full/dPojoBw" class="menu-card">
+          <div class="icon">🏨</div>
+          <div class="label">호텔</div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Oh LAOS. 모든 권리 보유.</p>
+  </footer>
+
 </body>
 </html>
