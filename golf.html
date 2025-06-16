@@ -6,6 +6,12 @@
   <title>라오스 골프장 정보</title>
   <link rel="stylesheet" href="./css/style.css" />
   <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 2rem 1rem;
+    }
     .menu-grid {
       display: flex;
       flex-direction: column;
@@ -34,4 +40,41 @@
     }
     .reserve-button {
       align-self: flex-start;
-      padd
+      padding: 0.5rem 1rem;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+    }
+    .reserve-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>비엔티엔 골프장 정보</h1>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <div class="icon">🏌️‍♂️</div>
+      <div class="label">라오 컨트리 클럽</div>
+      <p>비엔티엔 도심에서 약 16km, 차량 30분 거리</p>
+      <a class="reserve-button" href="#">예약하기</a>
+    </div>
+
+    <div class="menu-card">
+      <div class="icon">⛳</div>
+      <div class="label">롱비엔 골프클럽</div>
+      <p>도심에서 가까우며 한국인이 자주 이용</p>
+      <a class="reserve-button" href="#">예약하기</a>
+    </div>
+
+    <div class="menu-card">
+      <div class="icon">🏌️</div>
+      <div class="label">레인보우 골프장</div>
+      <p>비엔티엔 외곽 위치, 조용하고 저렴한 코스</p>
+      <a class="reserve-button" href="#">예약하기</a>
+    </div>
+  </div>
+</body>
+</html>
